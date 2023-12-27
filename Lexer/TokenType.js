@@ -1,0 +1,18 @@
+export default Object.freeze({
+    EndOfFile: Symbol('end of file'),
+    Newline: Symbol('new line'),
+    Whitespace: Symbol('white space'),
+    Number: Symbol('number'),
+    Variable: Symbol('variable'),
+    Comment: Symbol('comment'),
+    Equal: Symbol('='),
+    Plus: Symbol('+'),
+    Minus: Symbol('-'),
+    Asterisk: Symbol('*'),
+    Slash: Symbol('/'),
+    DoubleAsterisk: Symbol('**'),
+    Percentage: Symbol('%'),
+    LeftRoundBracket: Symbol('('),
+    RightRoundBracket: Symbol(')'),
+    Unknown: Symbol('unknown'),
+})

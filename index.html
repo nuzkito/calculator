@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calculadora.css">
+
+    <script type="module" src="index.js" defer></script>
+</head>
+<body>
+    <textarea class="editor" id="input" autofocus spellcheck="false">
+# This editor can perform arithmetic operations
+(-40 + 25) * 8
+2**8 - 2
+
+# Also support variables
+minutes = 30
+secondsPerMinute = 60
+minutes * secondsPerMinute
+
+# Input is saved in local storage, so you can reload without lose changes</textarea>
+    <div class="line-results" id="results"></div>
+    <div class="total-text">Total:</div>
+    <div class="total-result" id="total"></div>
+    <div class="syntax-highlighted" id="syntax-highlighted"></div>
+</body>
+</html>

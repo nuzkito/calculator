@@ -1,0 +1,66 @@
+:root {
+    --font-size: 1rem;
+    --line-height: calc(var(--font-size) * 1.7);
+}
+
+body {
+    background-color: hsl(0, 0%, 98%);
+    background-size: 100% var(--line-height);
+    font-family: monospace;
+    line-height: var(--line-height);
+    display: grid;
+    grid-template-columns: 1fr minmax(12em, min-content);
+    grid-template-rows: auto;
+    margin: 0.1rem;
+    padding: var(--line-height);
+    font-size: var(--font-size);
+}
+
+.editor, .syntax-highlighted {
+    grid-column: 1;
+    grid-row: 1;
+    border: 0;
+    margin: 0;
+    font-size: var(--font-size);
+    text-align: left;
+    line-height: inherit;
+    padding: calc(var(--font-size) * 3 / 5) calc(var(--font-size));
+    min-height: calc(var(--line-height) * 8);
+}
+
+.editor {
+    z-index: 1;
+    background-color: transparent;
+    resize: none;
+    color: transparent;
+    caret-color: black;
+    outline: none;
+    overflow: hidden;
+}
+
+.syntax-highlighted {
+    z-index: 0;
+    background-color: white;
+    font-family: monospace;
+    white-space: pre-wrap;
+    border-radius: .4em;
+    box-shadow: 0 0 5px hsl(0, 0%, 85%);
+}
+
+.line-results {
+    padding: calc(var(--font-size) / 2);
+}
+
+.result {
+    height: var(--line-height);
+    white-space: nowrap;
+}
+
+.total-text {
+    text-align: right;
+    padding: calc(var(--font-size) / 2) 0;
+}
+
+.total-result {
+    padding: calc(var(--font-size) / 2);
+}
